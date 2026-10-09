@@ -20,6 +20,7 @@ document.getElementById("inisial").textContent = profil.nama
   .map((k) => k[0])
   .join("")
   .toUpperCase();
+img.onload = () => (document.getElementById("inisial").style.display = "none");
 img.onerror = () => (img.style.display = "none");
 img.src = profil.foto;
 
